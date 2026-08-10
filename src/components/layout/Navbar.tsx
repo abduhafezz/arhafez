@@ -90,29 +90,33 @@ export function Navbar({ variant = "light" }: NavbarProps) {
           off-screen. Keeping them siblings lets each transform independently. */}
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 px-6 lg:px-20 py-5 lg:py-8",
+          "fixed top-0 left-0 right-0 z-50 py-5 lg:py-8",
           "transition-[transform,background-color] duration-300 ease-out",
           isDark ? "bg-black" : "bg-white",
           hidden ? "-translate-y-full" : "translate-y-0"
         )}
       >
-        {/* From md up the pill sits in this same band, so match its height (h-10)
-            to put both on one centreline — otherwise the shorter wordmark
-            optically floats above it. Below md the pill docks to the bottom, so
-            the bar stays compact. */}
-        <div className="flex items-center justify-between md:h-10">
-          {/* Left: Wordmark — official ARHAFEZ logo */}
-          <Link
-            to="/"
-            aria-label="ARHAFEZ — home"
-            className={cn(
-              "transition-[opacity,color] duration-300 hover:opacity-60",
-              isDark ? "text-white" : "text-black"
-            )}
-          >
-            <Logo className="h-[18px] sm:h-[22px]" />
-          </Link>
-
+        {/* Logo lives in the same `.container` as the page content, so it shares
+            the content's left edge and max-width at every breakpoint instead of
+            hugging the viewport edge on wide screens. */}
+        <div className="container">
+          {/* From md up the pill sits in this same band, so match its height (h-10)
+              to put both on one centreline — otherwise the shorter wordmark
+              optically floats above it. Below md the pill docks to the bottom, so
+              the bar stays compact. */}
+          <div className="flex items-center justify-between md:h-10">
+            {/* Left: Wordmark — official ARHAFEZ logo */}
+            <Link
+              to="/"
+              aria-label="ARHAFEZ — home"
+              className={cn(
+                "transition-[opacity,color] duration-300 hover:opacity-60",
+                isDark ? "text-white" : "text-black"
+              )}
+            >
+              <Logo className="h-[18px] sm:h-[22px]" />
+            </Link>
+          </div>
         </div>
       </header>
 
