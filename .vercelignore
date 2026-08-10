@@ -1,0 +1,10 @@
+# Keep deploy uploads lean — Vercel installs deps and builds on its side.
+node_modules
+dist
+dist-ssr
+assets-src
+.git
+.vercel
+.claude
+*.local
+.DS_Store
