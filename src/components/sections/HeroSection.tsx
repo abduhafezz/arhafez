@@ -37,7 +37,7 @@ export function HeroSection() {
             style={{ transform: `translateY(${titleOffset}px)` }}
           >
             <p className="eyebrow text-gray-400 mb-6">
-              ARHAFEZ · Strategic Brand Practice
+              ARHAFEZ · Strategic Brand Designer
             </p>
             <h1 className="hero-display text-white">
               I turn ambition
