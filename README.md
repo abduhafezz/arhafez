@@ -110,9 +110,9 @@ same URL. Browsers are unaffected — a bare `*/*` does not qualify — and ever
 failure path falls through to the normal HTML app. The same content is also
 published directly at `/index.md`, `/about.md`, `/project/<slug>.md`, etc.
 
-The Vercel project has **no Git integration**: pushing to `main` does not
-deploy. Production is released explicitly with `vercel deploy --prod` from a
-clean tree.
+The Vercel project **is** connected to GitHub: pushing to `main` triggers a
+production deployment automatically. A manual `vercel deploy --prod` is not
+needed and will only create a redundant second build.
 
 ---
 
