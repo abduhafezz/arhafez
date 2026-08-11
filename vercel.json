@@ -6,7 +6,7 @@
       "source": "/(.*)",
       "headers": [
         { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\"" },
-        { "key": "Content-Signal", "value": "ai-train=no, search=yes, ai-input=no" },
+        { "key": "Content-Signal", "value": "ai-train=no, search=yes, ai-input=yes" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
@@ -16,46 +16,65 @@
     {
       "source": "/",
       "headers": [
-        { "key": "Link", "value": "<https://arhafez.com/index.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/index.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
       ]
     },
     {
       "source": "/services",
       "headers": [
-        { "key": "Link", "value": "<https://arhafez.com/services.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/services.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
       ]
     },
     {
       "source": "/about",
       "headers": [
-        { "key": "Link", "value": "<https://arhafez.com/about.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/about.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
       ]
     },
     {
       "source": "/contact",
       "headers": [
-        { "key": "Link", "value": "<https://arhafez.com/contact.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/contact.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
       ]
     },
     {
       "source": "/project/pldg-development",
-      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/pldg-development.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/project/pldg-development.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
+      ]
     },
     {
       "source": "/project/snb",
-      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/snb.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/project/snb.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
+      ]
     },
     {
       "source": "/project/heli",
-      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/heli.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/project/heli.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
+      ]
     },
     {
       "source": "/project/ghadi-real-estate",
-      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/ghadi-real-estate.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/project/ghadi-real-estate.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
+      ]
     },
     {
       "source": "/project/ward-production",
-      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/ward-production.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\", <https://arhafez.com/project/ward-production.md>; rel=\"alternate\"; type=\"text/markdown\"" },
+        { "key": "Vary", "value": "Accept" }
+      ]
     },
     {
       "source": "/sitemap.xml",

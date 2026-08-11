@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023"],
+    /* DOM is included for the Edge runtime's web APIs (Request/Response/fetch)
+       used by middleware.ts — not for browser DOM access. */
+    "lib": ["ES2023", "DOM"],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -18,5 +20,5 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "middleware.ts"]
 }

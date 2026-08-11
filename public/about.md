@@ -16,9 +16,11 @@ A logo is the easy part. What matters is the system underneath it — the strate
 
 ARHAFEZ started as my own name, and it's growing into something larger — on purpose. Same name, same belief, from the first project to wherever this goes.
 
-## Agencies I've worked with
+## The record
 
-Telfaz · Alpha Studio · Alep. Studio · AZ · Gimix
+- **Agencies:** Telfaz · alpha studio · alep. studio · AZ · Gimix
+- **Markets:** Saudi Arabia · Egypt · UAE
+- **Sectors:** Banking · Real estate · Industrial tech · Film & TV
 
 ## Recognition
 

@@ -6,8 +6,8 @@ Allow: /
 
 # Content Signals Policy (https://contentsignals.org)
 # search=yes    → indexing for search results is allowed
-# ai-input=no   → do not use this content as input for generative AI at query time
+# ai-input=yes  → this content may be used as input for generative AI at query time
 # ai-train=no   → do not use this content to train AI models
-Content-Signal: ai-train=no, search=yes, ai-input=no
+Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 Sitemap: https://arhafez.com/sitemap.xml

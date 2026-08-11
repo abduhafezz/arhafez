@@ -2,9 +2,29 @@
 
 Canonical: https://arhafez.com/services
 
-**How I can help.** Everything I offer starts with strategy — never with a logo.
+**How a system gets built.** Four phases, every time. Strategy first, design second — so the brand still works in five years. Everything I offer starts with strategy — never with a logo.
 
-## Offerings
+## The process
+
+### 01 — Diagnose
+I learn the business first — where it's going, and what's holding the brand back. Nothing gets made on a guess.
+*What you leave with:* Brand audit · Strategic diagnosis · Prioritised recommendations
+
+### 02 — Position
+We settle what the brand stands for and how it says it. The part most brands skip — and why most brands drift.
+*What you leave with:* Brand strategy · Positioning & messaging · Verbal identity
+
+### 03 — Build
+Only now does it become visual. One system with a logic underneath, so later decisions already have an answer.
+*What you leave with:* Brand identity · Editorial & layout · Art direction
+
+### 04 — Hold
+A system is only worth what survives the handover. Documented so your team can run it — and I stay on to keep it coherent.
+*What you leave with:* Brand guidelines · Creative direction · Ongoing stewardship
+
+## Ways in
+
+Each engagement below is an entry point into the same process.
 
 - **Brand Audit** — When something feels off but you can't name it, this is where we start. A clear, outside read on what's working, what's holding you back, and what to fix first.
 - **The Brand System** — The full build — ambition turned into a system. Strategy, identity, and guidelines that leave you with one coherent brand, not a folder of loose files.
@@ -18,6 +38,10 @@ Canonical: https://arhafez.com/services
 ## How I work
 
 Every project starts with strategy and ends with a system built to last. No guesswork. No templates.
+
+- **System before logo** — A logo is an output of the system, not a substitute for one.
+- **Strategy first, always** — Every visual decision traces back to a business reason.
+- **Built to endure** — Trends are disposable. A system compounds.
 
 ## Investment
 

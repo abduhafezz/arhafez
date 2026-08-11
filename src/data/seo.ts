@@ -23,8 +23,12 @@ const DEFAULT_DESCRIPTION =
  *  Manual asset: add a branded 1200×630 image at public/og-image.jpg. */
 export const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`;
 
-/** Reusable id references into the sitewide entity graph (defined in index.html). */
+/** Reusable id references into the sitewide entity graph (defined in index.html).
+ *  Route-level nodes point back at these ids rather than re-describing the
+ *  entities, so the graph stays single-sourced and never contradicts itself. */
 const PERSON_REF = { "@id": `${SITE_URL}/#person` } as const;
+const WEBSITE_REF = { "@id": `${SITE_URL}/#website` } as const;
+const PRACTICE_REF = { "@id": `${SITE_URL}/#practice` } as const;
 
 const AREA_SERVED = [
   { "@type": "Country", name: "Saudi Arabia" },
@@ -39,6 +43,31 @@ const staticRoutes: Record<string, RouteSeo> = {
     title: "Abdulrahman Hafez — Strategic Brand Designer | ARHAFEZ",
     description: DEFAULT_DESCRIPTION,
     path: "/",
+    jsonLd: [
+      {
+        "@type": "CollectionPage",
+        "@id": `${SITE_URL}/#webpage`,
+        url: `${SITE_URL}/`,
+        name: "Abdulrahman Hafez — Strategic Brand Designer | ARHAFEZ",
+        description: DEFAULT_DESCRIPTION,
+        isPartOf: WEBSITE_REF,
+        about: PERSON_REF,
+        // The homepage's substance is the selected-work grid; naming the case
+        // studies here makes that list machine-readable without duplicating the
+        // CreativeWork nodes, which live on their own pages.
+        mainEntity: {
+          "@type": "ItemList",
+          name: "Selected work",
+          numberOfItems: projects.length,
+          itemListElement: projects.map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: p.title,
+            url: `${SITE_URL}/project/${p.id}`,
+          })),
+        },
+      },
+    ],
   },
   "/services": {
     title: "Brand Strategy, Identity & Brand Systems — ARHAFEZ",
@@ -56,6 +85,8 @@ const staticRoutes: Record<string, RouteSeo> = {
           "Strategic brand design for ambitious founders — Brand Audit, the full Brand System, Brand Identity, Brand Guidelines, Rebranding, Art Direction, Editorial & Layout, and Creative Direction.",
         provider: PERSON_REF,
         areaServed: AREA_SERVED,
+        isPartOf: WEBSITE_REF,
+        brand: PRACTICE_REF,
       },
     ],
   },
@@ -71,6 +102,7 @@ const staticRoutes: Record<string, RouteSeo> = {
         url: `${SITE_URL}/about`,
         name: "About Abdulrahman Hafez",
         mainEntity: PERSON_REF,
+        isPartOf: WEBSITE_REF,
       },
     ],
   },
@@ -86,6 +118,7 @@ const staticRoutes: Record<string, RouteSeo> = {
         url: `${SITE_URL}/contact`,
         name: "Contact ARHAFEZ",
         mainEntity: PERSON_REF,
+        isPartOf: WEBSITE_REF,
       },
     ],
   },
@@ -117,7 +150,8 @@ function projectRoute(id: string): RouteSeo | null {
     creditText: p.credit,
     keywords: p.tags.join(", "),
     genre: p.description,
-    creator: { "@id": `${SITE_URL}/#person` },
+    creator: PERSON_REF,
+    isPartOf: WEBSITE_REF,
     ...(image ? { image } : {}),
     ...(p.agency ? { producer: { "@type": "Organization", name: p.agency } } : {}),
   };

@@ -15,6 +15,9 @@ Every page below is also available as Markdown (append the .md link, or send `Ac
 Strategic brand design for ambitious founders and growing businesses:
 Brand Audit · The Brand System · Brand Identity · Brand Guidelines · Rebranding · Art Direction · Editorial & Layout · Creative Direction. Every project starts with strategy — never with a logo. See https://arhafez.com/services.md
 
+## Process
+Every engagement runs through four phases: **Diagnose** (brand audit, strategic diagnosis, prioritised recommendations) → **Position** (brand strategy, positioning & messaging, verbal identity) → **Build** (brand identity, editorial & layout, art direction) → **Hold** (brand guidelines, creative direction, ongoing stewardship). Strategy first, design second.
+
 ## Pages
 - [Home](https://arhafez.com/index.md): positioning and selected work
 - [Services](https://arhafez.com/services.md): brand strategy, brand identity, and brand systems
