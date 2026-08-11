@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { RouteSeo } from "@/components/seo/RouteSeo";
 import { CalFloatingButton } from "@/components/booking/CalFloatingButton";
 import Index from "@/pages/Index";
 import Services from "@/pages/Services";
@@ -15,6 +16,7 @@ const App = () => (
     <CalFloatingButton />
     <BrowserRouter>
       <ScrollToTop />
+      <RouteSeo />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/services" element={<Services />} />

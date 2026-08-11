@@ -3,18 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARHAFEZ — I turn ambition into a system</title>
-    <meta name="description" content="ARHAFEZ is the strategic brand practice of Abdulrhman Hafez. Brand systems for ambitious founders — strategy, identity, and guidelines, built to last. Working across Saudi Arabia, Egypt, and the UAE." />
-    <meta name="author" content="Abdulrhman Hafez" />
+    <meta name="theme-color" content="#000000" />
 
-    <meta property="og:title" content="ARHAFEZ — I turn ambition into a system" />
-    <meta property="og:description" content="Brand systems for ambitious founders — strategy, identity, and guidelines, built to last." />
+    <!-- Primary meta (per-route values are refined at runtime by RouteSeo) -->
+    <title>Abdulrahman Hafez — Strategic Brand Designer | ARHAFEZ</title>
+    <meta name="description" content="ARHAFEZ is the strategic brand practice of Abdulrahman Hafez. Brand systems for ambitious founders — strategy, identity, and guidelines, built to last. Working across Saudi Arabia, Egypt, and the UAE." />
+    <meta name="author" content="Abdulrahman Hafez" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://arhafez.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="ARHAFEZ" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://arhafez.com/" />
+    <meta property="og:title" content="Abdulrahman Hafez — Strategic Brand Designer | ARHAFEZ" />
+    <meta property="og:description" content="Brand systems for ambitious founders — strategy, identity, and guidelines, built to last." />
+    <meta property="og:image" content="https://arhafez.com/og-image.jpg" />
 
-    <meta name="twitter:card" content="summary" />
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abdulrahman Hafez — Strategic Brand Designer | ARHAFEZ" />
+    <meta name="twitter:description" content="Brand systems for ambitious founders — strategy, identity, and guidelines, built to last." />
+    <meta name="twitter:image" content="https://arhafez.com/og-image.jpg" />
+
+    <!-- Discovery for AI agents / LLMs -->
+    <link rel="alternate" type="text/markdown" href="https://arhafez.com/index.md" />
+    <link rel="sitemap" type="application/xml" href="https://arhafez.com/sitemap.xml" />
 
     <!-- Font: Satoshi -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Structured data: Person + WebSite + ProfessionalService (facts already on the site).
+         Establishes the entity relationship: Abdulrahman Hafez = ARHAFEZ = Strategic Brand Designer. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://arhafez.com/#website",
+          "url": "https://arhafez.com/",
+          "name": "ARHAFEZ",
+          "alternateName": ["Abdulrahman Hafez", "AR Hafez"],
+          "description": "The official website of Abdulrahman Hafez (ARHAFEZ), strategic brand designer.",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://arhafez.com/#person" },
+          "about": { "@id": "https://arhafez.com/#person" },
+          "image": "https://arhafez.com/og-image.jpg"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://arhafez.com/#person",
+          "name": "Abdulrahman Hafez",
+          "alternateName": ["ARHAFEZ", "AR Hafez"],
+          "url": "https://arhafez.com/",
+          "mainEntityOfPage": "https://arhafez.com/about",
+          "jobTitle": "Strategic Brand Designer",
+          "description": "Abdulrahman Hafez is a strategic brand designer (ARHAFEZ) building brand systems for ambitious founders — strategy, identity, and guidelines. He works across Saudi Arabia, Egypt, and the UAE.",
+          "image": "https://arhafez.com/og-image.jpg",
+          "email": "mailto:hi@arhafez.com",
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Strategic Brand Designer",
+            "skills": ["Brand strategy", "Brand identity", "Brand systems", "Visual identity", "Art direction", "Editorial & layout"]
+          },
+          "knowsAbout": ["Brand strategy", "Brand identity", "Brand systems", "Visual identity", "Art direction"],
+          "knowsLanguage": ["en", "ar"],
+          "sameAs": [
+            "https://www.behance.net/arhafez",
+            "https://www.instagram.com/arhafez_/",
+            "https://www.linkedin.com/in/arhafez/"
+          ],
+          "award": "Gold Winner — Gridliners Design Awards 2024",
+          "brand": { "@id": "https://arhafez.com/#practice" },
+          "worksFor": { "@id": "https://arhafez.com/#practice" }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://arhafez.com/#practice",
+          "name": "ARHAFEZ",
+          "alternateName": "Abdulrahman Hafez",
+          "url": "https://arhafez.com/",
+          "slogan": "I turn ambition into a system.",
+          "description": "Strategic brand practice of Abdulrahman Hafez. Brand systems for ambitious founders — strategy, identity, and guidelines, built to last.",
+          "image": "https://arhafez.com/og-image.jpg",
+          "founder": { "@id": "https://arhafez.com/#person" },
+          "provider": { "@id": "https://arhafez.com/#person" },
+          "knowsAbout": ["Brand strategy", "Brand identity", "Brand systems", "Strategic brand design"],
+          "serviceType": ["Brand strategy", "Brand identity", "Brand systems", "Creative direction"],
+          "email": "mailto:hi@arhafez.com",
+          "areaServed": [
+            { "@type": "Country", "name": "Saudi Arabia" },
+            { "@type": "Country", "name": "Egypt" },
+            { "@type": "Country", "name": "United Arab Emirates" }
+          ],
+          "sameAs": [
+            "https://www.behance.net/arhafez",
+            "https://www.instagram.com/arhafez_/",
+            "https://www.linkedin.com/in/arhafez/"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Audit" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "The Brand System" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Identity" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Guidelines" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rebranding" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Art Direction" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Editorial & Layout" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creative Direction" } }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>

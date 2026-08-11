@@ -1,3 +1,91 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/sitemap.xml>; rel=\"sitemap\"" },
+        { "key": "Content-Signal", "value": "ai-train=no, search=yes, ai-input=no" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/index.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+      ]
+    },
+    {
+      "source": "/services",
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/services.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+      ]
+    },
+    {
+      "source": "/about",
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/about.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+      ]
+    },
+    {
+      "source": "/contact",
+      "headers": [
+        { "key": "Link", "value": "<https://arhafez.com/contact.md>; rel=\"alternate\"; type=\"text/markdown\"" }
+      ]
+    },
+    {
+      "source": "/project/pldg-development",
+      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/pldg-development.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+    },
+    {
+      "source": "/project/snb",
+      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/snb.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+    },
+    {
+      "source": "/project/heli",
+      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/heli.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+    },
+    {
+      "source": "/project/ghadi-real-estate",
+      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/ghadi-real-estate.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+    },
+    {
+      "source": "/project/ward-production",
+      "headers": [{ "key": "Link", "value": "<https://arhafez.com/project/ward-production.md>; rel=\"alternate\"; type=\"text/markdown\"" }]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/(.*).md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "X-Robots-Tag", "value": "noindex" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "X-Robots-Tag", "value": "noindex" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*).(jpg|jpeg|png|webp|avif|svg|ico|woff2)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+    }
+  ]
 }

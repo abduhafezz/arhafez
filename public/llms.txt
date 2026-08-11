@@ -1,0 +1,35 @@
+# ARHAFEZ — Abdulrahman Hafez
+
+> **Abdulrahman Hafez** is a **Strategic Brand Designer** who practices under the name **ARHAFEZ**.
+> Abdulrahman Hafez = ARHAFEZ = Strategic Brand Designer. (Also written: AR Hafez.)
+
+**Positioning:** I turn ambition into a system.
+
+Abdulrahman Hafez builds brand systems for ambitious founders — strategy, identity, and the structure that holds them together — so the brand still works as the business grows. He works across **Saudi Arabia, Egypt, and the UAE**, from banking to real estate to film. Gold Winner, Gridliners Design Awards 2024.
+
+Official website: https://arhafez.com
+
+Every page below is also available as Markdown (append the .md link, or send `Accept: text/markdown`).
+
+## Services
+Strategic brand design for ambitious founders and growing businesses:
+Brand Audit · The Brand System · Brand Identity · Brand Guidelines · Rebranding · Art Direction · Editorial & Layout · Creative Direction. Every project starts with strategy — never with a logo. See https://arhafez.com/services.md
+
+## Pages
+- [Home](https://arhafez.com/index.md): positioning and selected work
+- [Services](https://arhafez.com/services.md): brand strategy, brand identity, and brand systems
+- [About](https://arhafez.com/about.md): Abdulrahman Hafez — strategic brand designer
+- [Contact](https://arhafez.com/contact.md): start a project or book a call
+
+## Work
+- [PLDG Development](https://arhafez.com/project/pldg-development.md): real-estate brand system (2025)
+- [SNB](https://arhafez.com/project/snb.md): tiered bank-card system, with Telfaz (2024)
+- [Heli](https://arhafez.com/project/heli.md): industrial-tech brand identity, with alpha studio (2024)
+- [Ghadi Real Estate](https://arhafez.com/project/ghadi-real-estate.md): quiet-luxury real-estate identity, with alpha studio (2024)
+- [Ward Production](https://arhafez.com/project/ward-production.md): film & TV visual identity (2023)
+
+## Contact
+- Email: hi@arhafez.com
+- Behance: https://www.behance.net/arhafez
+- Instagram: https://www.instagram.com/arhafez_/
+- LinkedIn: https://www.linkedin.com/in/arhafez/
