@@ -32,3 +32,4 @@ Gold Winner — Gridliners Design Awards, 2024. First in the Arab region.
 - Behance: https://www.behance.net/arhafez
 - Instagram: https://www.instagram.com/arhafez_/
 - LinkedIn: https://www.linkedin.com/in/arhafez/
+- Facebook: https://www.facebook.com/arhafez.fb
